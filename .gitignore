@@ -1,9 +1,11 @@
-# OSX
-#
+# ============================
+# macOS
+# ============================
 .DS_Store
 
-# Xcode
-#
+# ============================
+# Xcode (iOS)
+# ============================
 build/
 *.pbxuser
 !default.pbxuser
@@ -13,74 +15,68 @@ build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata
+xcuserdata/
 *.xccheckout
 *.moved-aside
-DerivedData
+DerivedData/
 *.hmap
 *.ipa
 *.xcuserstate
 **/.xcode.env.local
 
-# Android/IntelliJ
-#
-build/
-.idea
-.gradle
-local.properties
+# ============================
+# Android / IntelliJ
+# ============================
+android/app/build/
+android/.gradle/
+android/.idea/
 *.iml
 *.hprof
+local.properties
 .cxx/
 *.keystore
 !debug.keystore
 .kotlin/
 
-# node.js
-#
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/
-
-**/fastlane/report.xml
-**/fastlane/Preview.html
-**/fastlane/screenshots
-**/fastlane/test_output
-
-# Bundle artifact
-*.jsbundle
-
-# Ruby / CocoaPods
-**/Pods/
-/vendor/bundle/
-
-# Temporary files created by Metro to check the health of the file watcher
-.metro-health-check*
-
-# testing
-/coverage
-
-# Yarn
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
 # ============================
-# React Native & Node
+# Node.js
 # ============================
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 package-lock.json
+
+# ============================
+# React Native specific
+# ============================
 .expo/
 dist/
 tmp/
+.metro-health-check*
+/coverage
+*.jsbundle
+
+# ============================
+# Fastlane
+# ============================
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# ============================
+# CocoaPods (iOS)
+# ============================
+**/Pods/
+vendor/bundle/
+
+# ============================
+# Yarn (Berry)
+# ============================
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
